@@ -21,14 +21,3 @@ class Solution:
             return mid - 1
         else:   
             return mid
-
-
-
-    # AC, slow
-    # def mySqrt(self, x: int) -> int:
-    #     result = 1
-
-    #     while result**2 <= x:
-    #         result += 1
-
-    #     return result - 1

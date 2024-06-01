@@ -8,10 +8,3 @@ class Solution:
             return
 
         nums[:k], nums[k:] = nums[-k:], nums[:-k]
-
-        # time out
-        # while k:
-        #     nums[0], nums[1:] = nums[-1], nums[:-1]
-        #     k -= 1
-
-        

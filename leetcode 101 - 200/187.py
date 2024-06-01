@@ -1,8 +1,11 @@
 class Solution:
-    def findRepeatedDnaSequences(self, s: str) -> List[str]:
-        sub_dict = {}
-        for i in range(len(s) - 9):
-            sub = s[i:i+10]
-            sub_dict[sub] = sub_dict.get(sub, 0) + 1
-        
-        return [sub for sub, times in sub_dict.items() if times > 1]
+    def findRepeatedDnaSequences(self, s):
+        """
+        :type s: str
+        :rtype: List[str]
+        """
+        dic, str = {}, "x" + s[:9]
+        for i in range(9, len(s)):
+            str = str[1:] + s[i]
+            dic[str] = 1 if str not in dic else dic[str] + 1
+        return [k for k, v in dic.items() if v > 1]

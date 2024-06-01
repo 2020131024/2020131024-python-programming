@@ -10,19 +10,3 @@ class Solution:
             result = thisSet
 
         return list(result)
-
-    
-    # def permuteUnique(self, nums: List[int]) -> List[List[int]]:
-
-    #     finish = set()
-
-    #     def func(nums, result):
-    #         if len(nums) == 0:
-    #             finish.add(tuple(result))
-    #         else:
-    #             for i, n in enumerate(nums):
-    #                 func(nums[:i] + nums[i+1:], result + [n])
-
-    #     func(nums, [])
-
-    #     return finish

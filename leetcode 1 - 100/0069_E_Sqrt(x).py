@@ -1,5 +1,4 @@
 class Solution:
-    # AC, fast
     def mySqrt(self, x: int) -> int:
         if x in [0, 1]:
             return x

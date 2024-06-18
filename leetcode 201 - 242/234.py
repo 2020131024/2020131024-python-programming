@@ -4,7 +4,6 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    # AC, time: O(n), space: O(1)
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
         slow, fast = head, head
         while fast and fast.next:
